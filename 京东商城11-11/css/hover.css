@@ -1,0 +1,32 @@
+.container .header .header-adress adress:hover{
+	background: white;
+	border: 0px 1px 0px 1px #e3e4e5 solid;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.container .header .header-adress .iconfont:hover>span{
+	color: red;
+}
+.container .header .header-adress adress .adress-container ul li a:hover{
+	color: red;
+}
+.container .header .header-adress adress .adress-container .other-Areas span:nth-of-type(2) a:hover{
+	color: red;
+}
+.container .header .header-right li a:hover{
+	color: red;
+	}
+.container .header .header-right li:hover a{
+	color: red;
+}
+.container .header .header-right li:nth-of-type(7):hover a{
+	color: #999;
+}
+.container .header .header-right li:nth-of-type(8):hover a{
+	color: #999;
+}
+.container .search-box .search-box-container .search-right .search-input .search .Record ul li:hover{
+	background: #CCC;
+}
