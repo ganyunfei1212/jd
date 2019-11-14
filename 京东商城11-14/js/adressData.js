@@ -84,6 +84,8 @@ var search = [{
 ]
 var hotWords = ["联想一体机","微波炉","笔记本电脑"] 
 
+var imgS = ['img/indexImg/banner1.jpg.webp','img/indexImg/banner2.jpg.webp','img/indexImg/banner3.webp','img/indexImg/banner4.webp','img/indexImg/banner5.webp',
+'img/indexImg/banner6.webp','img/indexImg/banner7.webp','img/indexImg/banner8.jpg']
  
 
 

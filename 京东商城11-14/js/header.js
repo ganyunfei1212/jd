@@ -196,16 +196,6 @@ function searchFn () {
 		}
 		searchInput.placeholder = hotWords[i];
 	},3000)
-	// searchInput.onmouseenter = function(){
-	// 	ulS.style.display = "block";
-	// }
-	// searchInput.onmouseleave = function(){
-	// 	setTimeout(function() {
-	// 		alert(12);
-	// 		ulS.style.display = "none";
-	// 	}, 2000);
-	// }
-	
 	searchInput.onfocus = function(){
 		clearInterval(timer);
 		if(document.cookie.trim()){
@@ -298,6 +288,120 @@ function historicalRecord(){
 	}
 	
 }
+//标签导航数据
+biaoqianNav();
+function biaoqianNav(){
+	var data = dataOne["data"];
+	var i;
+	var ulS = document.querySelector("#biaoqian");
+	var dataS = document.querySelector(".data");
+	data.forEach(function(el,index){
+		var li = document.createElement("li");
+		li.onmouseenter = function(){
+			var dataleft = document.querySelectorAll(".data-left");
+			dataS.style.display = 'block';
+			 for(var i = 0; i<dataleft.length; i++){
+				 dataleft[i].style.display = "none";
+			 }
+			dataleft[index].style.display = "block";
+		}
+		li.onmouseleave = function(){
+			var dataleft = document.querySelectorAll(".data-left");
+			dataS.style.display = 'none';
+		}
+		dataS.onmouseleave = function(){
+			var dataleft = document.querySelectorAll(".data-left");
+			dataS.style.display = 'none';
+		}
+		dataS.onmouseenter = function(){
+			var dataleft = document.querySelectorAll(".data-left");
+			dataS.style.display = 'block';
+		}
+		el["s"].forEach(function(elx,index){
+			var arr = elx['n'].split("|");
+			if(el["s"].length==index+1){
+				li.innerHTML += '<a href="">'+arr[1]+'</a>';
+			}else{
+				li.innerHTML += '<a href="">'+arr[1]+'</a><span>/</span>';
+			}
+		})
+		ulS.appendChild(li);
+	})
+}
+//京东数据标签页部分
+biaoqian();
+function biaoqian(){
+	var data = dataOne["data"];
+	var dataS = document.querySelector(".data");
+	var dataRight = document.querySelector(".data-right");
+	data.forEach(function(el,index){
+		var str = '';
+		var arrS = [];
+		var divs = document.createElement("div");
+		divs.setAttribute("class","data-left");
+		var changeTitle = document.createElement("div");
+		changeTitle.setAttribute("class","change-title");
+		var itemBox = document.createElement("div");
+		itemBox.setAttribute("class","item-box");
+		el["t"].forEach(function(el,index){
+			var arr = el.split("|");
+			arrS.push(arr[1]);
+		})
+		arrS.forEach(function(el,index){
+			str += '<div class="item"><a href="">'+el+'</a></div>';
+		})
+		
+		
+		itemBox.innerHTML = str;
+		var change = document.createElement("div")
+		change.setAttribute("class","change");
+		for(var i = 0 ; i < el["s"][0]["s"].length; i++){
+			var dl = document.createElement("dl");
+			var dt = document.createElement("dt");
+			var dd = document.createElement("dd");
+			var ar = el["s"][0]["s"][i]["n"].split("|");
+			dt.innerHTML = '<a href="">'+ar[1]+'<i class="iconfont">&#xe6ec;</i></a>';
+			 for(var j = 0 ; j < el["s"][0]["s"][i]["s"].length; j++){
+				var arr = el["s"][0]["s"][i]["s"][j]["n"].split("|");
+					dd.innerHTML += '<a href="">'+arr[1]+'</a>';
+			 }
+			 dl.appendChild(dt);
+			 dl.appendChild(dd);
+			 change.appendChild(dl);
+		 }
+		changeTitle.appendChild(itemBox);
+		divs.appendChild(changeTitle);
+		divs.appendChild(change);
+		dataS.insertBefore(divs,dataRight);
+	})
+}
+// 标签页的鼠标移入移出事件
+banner();
+function banner(){
+	var bannerUls = document.querySelector(".banner-box>ul");
+	var circle = document.querySelector(".circle");
+	imgS.forEach(function(el,index){
+		var li = document.createElement("li");
+		var span = document.createElement("span");
+		span.innerHTML = "<i></i>";
+		li.innerHTML = '<a href="#"><img src='+el+' ></a>'
+		bannerUls.appendChild(li);
+		circle.appendChild(span);
+	})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -30,3 +30,15 @@
 .container .search-box .search-box-container .search-right .search-input .search .Record ul li:hover{
 	background: #CCC;
 }
+.content-container .content-box .content-data ul li:hover{
+	background: #666;
+}
+.content-container .content-box .content-data ul li a:hover{
+	color: #ba001c;
+}
+.content-container .content-box .content-banner .banner-box .circle span:hover{
+	background: rgba(255,255,255,.6);
+}
+.content-container .content-box .content-banner .banner-box .circle span:hover i{
+	background: rgba(255,255,255,1);
+}
