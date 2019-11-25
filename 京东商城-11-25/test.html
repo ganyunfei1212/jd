@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			width: 200px;
+			height: 150px;
+			position: relative;
+		}
+		li{
+			opacity: 0;
+			list-style: none;
+			position: absolute;
+			transition: 1s linear;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.active{
+			z-index: 100;
+			opacity: 1;
+		}
+		button{
+			position: absolute;
+			z-index: 99;
+		}
+		button:nth-of-type(2){
+			left: 100px;
+		}
+		.circle{
+			width: 100px;
+			height: 50px;
+			/* background: aquamarine; */
+			position: absolute;
+			bottom: 10px;
+			z-index: 100;
+		}
+		span{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: red;
+		}
+		.circle_active{
+			background: blue;
+		}
+	</style>
+	<script type="text/javascript" src="js/fz.js" defer></script>
+</head>
+<body>
+	<div style="position: relative;">
+		<ul id="list">
+			<li class="active"><img src="img/indexImg/6a85853f35f2d5db.png" ></li>
+			<li><img src="img/indexImg/banner8.jpg" ></li>
+			<li><img src="img/indexImg/6a85853f35f2d5db.png" ></li>
+			<li><img src="img/indexImg/2.png" ></li>
+			<li><img src="img/indexImg/banner8.jpg" ></li>
+		</ul>
+		<button type="button">下一张</button>
+		<button type="button">上一张</button>
+		<div class="circle">
+			<span class="circle_active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>	
+</body>
+</html>

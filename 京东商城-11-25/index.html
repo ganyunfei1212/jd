@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 样式重置 -->
+	<link rel="stylesheet" type="text/css" href="css/rest.css"/>
+	<!-- 公共头部 -->
+	<link rel="stylesheet" type="text/css" href="css/publicHeader.css"/>
+	<!-- icon图标 -->
+	<link rel="stylesheet" type="text/css" href="icon/font-icon/iconfont.css"/>
+	<!-- hover事件 -->
+	<link rel="stylesheet" type="text/css" href="css/hover.css"/>
+	<!-- 引入js数据 -->
+	<script src="js/adressData.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 淘宝数据 -->
+	<script src="js/dataOne.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/datajsThere.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/datafour.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/datasix.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 自定义函数方法 -->
+	<script src="js/fz.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!-- 头部js -->
+	<script src="js/header.js" type="text/javascript" charset="utf-8" defer="defer"></script>
+	<!-- 内容部分css -->
+	<link rel="stylesheet" type="text/css" href="css/indexContent.css"/>
+	<title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+</head>
+<body>
+	<div class="container">
+		
+		<!-- 首页宣传图片 -->
+		<div class="propagate">
+			<div class="propagate-item">
+				<h2>
+					<a href=""><img src="img/indexImg/双十一.jpg" ></a>
+				</h2>	
+				<i class="iconfont">&#xe6f0;</i>
+				<div class="header-btn-box">
+					<a href="">
+						<img src="img/indexImg/propage_btn1.png" >
+					</a>
+					<a href="">
+						<img src="img/indexImg/propage_btn1.png" >
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- header头部部分 -->
+		<header class="header">
+			<div class="header-adress">
+				<adress class="iconfont">&#xe6fc;<span class="active-adress">四川</span>
+					<div class="adress-container">
+						<ul>
+							<!-- <li><a href="">四川</a></li> -->
+							<!-- 渲染地区部分 -->
+						</ul>
+						<!-- 其他地区 -->
+						<div class="other-Areas">
+							<span><!-- 地区专享版 --></span>
+							<span><!-- <a href="">中國港澳</a> --></span>
+						</div>
+						<!-- Available Sites -->
+						<div class="Available-Sites">
+							<span>Available Sites</span>
+							<ul>
+								<!-- <li><span class="iconfont">&#xe74e;</span><a href="">Global Site</a></li>
+								<li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+								<li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+								<li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li> -->
+								<!-- 数据渲染部分 -->
+							</ul>
+						</div>
+					</div>
+				</adress>
+				<ul class="header-right">
+					<!-- 数据渲染部分 -->
+				</ul>
+			</div>
+		</header>
+		<div class="search-box">
+			<div class="search-box-container">
+				<h1 class="logo">
+					<a href="">
+						<img src="img/indexImg/logo.gif" >
+					</a>
+				</h1>
+				<div class="search-right">
+					<div class="search-container">
+						<div class="search-input">
+							<div class="search">
+								<input type="text" id="search" placeholder="潮鞋">
+								<div class="Record">
+									<ul id="historical">
+										<!-- <li><b>12</b><span><a href="">搜索历史</a></span></li>
+										<li><b>12</b>  <span><a href="">搜索历史</a></span></li>
+										<li><b>12</b>  <span><a href="">搜索历史</a></span></li> -->
+										<!-- <li><span><a href="">全部清除</a></span></li> -->
+									</ul>
+								</div>
+								<span class="iconfont">&#xe6fb;</span>
+								<button id="search-btn"><span class="iconfont">&#xe7ac;</span></button>
+							</div>
+							<div class="ShoppingCart">
+								<span class="iconfont">&#xe6f1;</span>
+								<span class="circular">1</span>
+								<a href="">我的购物车</a>
+							</div>
+							<ul style="clear: left;" id="hotWords">
+								<!-- <li><a href="">1</a></li>
+								<li><a href="">1</a></li>
+								<li><a href="">1</a></li>
+								<li><a href="">1</a></li> -->
+								<!-- 数据渲染部分 -->
+							</ul>
+							<div class="header-nav">
+								<ul>
+									<li><a href="">秒杀</a></li>
+									<li><a href="">优惠券</a></li>
+									<li><a href="">PLUS会员</a></li>
+									<li><a href="">品牌闪购</a></li>
+									<li><a href="">拍卖</a></li>
+									<li><a href="">京东时尚</a></li>
+									<li><a href="">京东超市</a></li>
+									<li><a href="">京东生鲜</a></li>
+									<li><a href="">海囤全球</a></li>
+									<li><a href="">京东金融</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="qr-code">
+							<img src="img/indexImg/6a85853f35f2d5db.png" >
+						</div>
+						
+					</div>	
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- //整体背景 -->
+		<div class="contaienr-bg">
+		<!-- 第二部分 -->
+		<div class="content-container">
+			<div class="content-box">
+				<div class="content-data">
+					<ul id="biaoqian">
+						<!-- 数据渲染部分 -->
+						<!-- <li><a href="">家用电器</a></li>
+						<li>
+							<a href="">手机</a><span>/</span>
+							<a href="">运营商</a><span>/</span>
+							<a href="">数码</a>
+						</li>
+						<li>
+							<a href="">工业品</a>
+						</li> -->
+					</ul>
+					<div class="data">
+						<!-- 数据渲染部分 -->
+						<!-- <div class="data-left">
+							<div class="change-title">
+								<div class="item-box">
+									<div class="item"><a href="">第一次的</a></div>
+									<div class="item"><a href="">1</a></div>
+									<div class="item"><a href="">1</a></div>
+									<div class="item"><a href="">1</a></div>
+									<div class="item"><a href="">1</a></div>
+									<div class="item"><a href="">1</a></div>
+								</div>
+							</div>
+							<div class="change">
+								<dl>
+									<dt><a href="">第一个<i class="iconfont">&#xe6ec;</i></a></dt>
+									<dd>
+										<a href="">1</a>
+									</dd>
+								</dl>
+							</div>
+						</div> -->
+						
+						<div class="data-right">
+							<ul>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+								<li><a href=""><img src="img/indexImg/6a85853f35f2d5db.png" ></a></li>
+							</ul>
+							<div>
+								<img src="img/indexImg/双十一.jpg" >
+							</div>
+							<div>
+								<img src="img/indexImg/logo.gif" >
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content-banner">
+					<div class="banner-box">
+						<ul>
+							<!-- <li><img src="img/indexImg/banner1.jpg.webp" ></li>
+							<li><img src="img/indexImg/banner2.jpg.webp" ></li>
+							<li><img src="img/indexImg/banner3.webp" ></li>
+							<li><img src="img/indexImg/banner4.webp" ></li>
+							<li><img src="img/indexImg/banner5.webp" ></li>
+							<li><img src="img/indexImg/banner6.webp" ></li>
+							<li><img src="img/indexImg/banner7.webp" ></li>
+							<li><img src="img/indexImg/banner8.jpg" ></li> -->
+						</ul>
+						<div class="circle">
+							<!-- <span><i></i></span>
+							<span><i></i></span>
+							<span><i></i></span>
+							<span><i></i></span>
+							<span><i></i></span> -->
+						</div>
+						<button type="button"><i class="iconfont">&#xe6ed;</i></button>
+						<button type="button"><i class="iconfont">&#xe6ec;</i></button>
+					</div>
+					
+					<div class="banner-right">
+						<div class="list">
+							<ul class="activeT">
+								<li><a href=""><img src="img/indexImg/banners1.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners1.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners1.webp" ></a></li>
+							</ul>
+							<ul>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+							</ul>
+							<ul>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+								<li><a href=""><img src="img/indexImg/banners2.jpg.webp" ></a></li>
+							</ul>
+						</div>
+						<button type="button"><i class="iconfont">&#xe6ed;</i></button>
+						<button type="button"><i class="iconfont">&#xe6ec;</i></button>
+					</div>
+				</div>
+				<div class="content-login"> 
+					<div class="login-top">
+							<div class="login-log"><img src="img/indexImg/下载.png" ></div>
+							<div class="login-xinx">
+								<a href="">Hi~欢迎逛京东！</a>
+								<p><a href="">登录</a>&nbsp;|&nbsp;<a href="">注册</a></p>
+							</div>
+							<div class="login-btn">
+								<button><a href="">新人报道</a></button>
+								<button><a href="">PLUS会员</a></button>
+							</div>
+					</div>
+					<div class="border"></div>
+					<div class="login-middle">
+						<div class="kuaibao"><a href="">京东快报</a></div>
+						<div class="more"><a href="">更多&nbsp;<i class="iconfont">&#xe6ec;</i></a></div>
+						<ul>
+							<li><span><a href="">HOT</a></span><a href="">小米含泪清库存！12G+512G不及友商一半价！</a></li>
+							<li><span><a href="">热议</a></span><a href="">重度使用Mate 30 Pro一个月，满肚子心里话要说</a></li>
+							<li><span><a href="">热议</a></span><a href="">荣耀V30新机5G下载速度测试表现令人满意！</a></li>
+							<li><span><a href="">热议</a></span><a href="">A13+良心价，新iPhone SE2来了</a></li>
+						</ul>
+					</div>
+					<div class="border"></div>
+					<div class="login-bottom">
+						<ul>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+							<li>
+								<i><img src="img/indexImg/1.png" alt=""></i>
+								<span><a href="javascript:;">游戏</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content-bg">
+				<a href=""></a>
+			</div>
+		</div>
+		<div class="twoNav">
+			<div class="min-nav">
+				<div class="ShoppingCart">
+					<span class="iconfont">&#xe6f1;</span>
+					<span class="circular">1</span>
+					<a href="">我的购物车</a>
+				</div>
+				<h2><a href=""></a></h2>
+				<div class="searchTwo">
+					<input type="text" placeholder="格兰仕&nbsp微波炉">
+					<span class="iconfont">&#xe6fb;</span>
+					<button type="button"><i class="iconfont">&#xe7ac;</i></button>
+				</div>
+			</div>
+		</div>
+		<div class="xuanchuanContainer">
+			<div class="miaosha">
+				<a href="">
+					<p>限时秒杀</p>
+					<p>16:00点场倒计时</p>
+					<div class="miaoshajishi">
+						<span>12</span><i>:</i>
+						<span>21</span><i>:</i>
+						<span>21</span>
+					</div>
+				</a>
+				<div class="xian"></div>
+			</div>
+			<div class="bannerFour-container">
+				<div class="bannerFour">
+					<!-- <a href="">
+						<div class="bannerFour-img">
+							<img src="img/indexImg/bannerFour1.jpg.webp" >
+						</div>
+						<h6>金光（APP）蓝蜗牛 A4/70g 复印纸 500张/包 5包/箱（2500张</h6>
+						<div class="price">
+							<span>
+								<i>¥</i>
+								<b>69.00</b>
+							</span>
+							<span>
+								<i>¥</i>
+								<b>79.00</b>
+							</span>
+						</div>
+					</a> -->
+				</div>
+				<button type="button"><i class="iconfont">&#xe6ed;</i></button>
+				<button type="button"><i class="iconfont">&#xe6ec;</i></button>
+			</div>
+			<div class="xuanchuan_right">
+				<ul>
+					<li><a href=""><img src="https://m.360buyimg.com/mobilecms/jfs/t1/86800/26/2380/43714/5dce6dc8Ea126ded2/1076b8d516cdd0d0.jpg" ></a>
+						<div>
+							<p><a href="">笔记本秒杀场</a></p>
+							<p><a href="">爆款低至1999元</a></p>
+							<button type="button">品类秒杀></button>
+						</div>
+					</li>
+					<li><a href=""><img src="https://m.360buyimg.com/mobilecms/jfs/t1/86800/26/2380/43714/5dce6dc8Ea126ded2/1076b8d516cdd0d0.jpg" ></a>
+						<div>
+							<p><a href="">笔记本秒杀场</a></p>
+							<p><a href="">爆款低至1999元</a></p>
+							<button type="button">品类秒杀></button>
+						</div>
+					</li>
+				</ul>
+				<div class="circle-two">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			
+		</div>
+		<!-- //侧边导航 -->
+		<div class="cebianNav">
+			<div class="cebianNav-right">
+				<ul>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href="">特色秒杀</a>
+						<i></i>
+					</li>
+					<li><a href=""><b class="iconfont">&#xe6ee;</b>顶部</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 特色优选 -->
+		<div class="tese">
+			<div class="tese-left">
+				<div class="tese-header">
+					<h3 class="tese-paihang">排行榜</h3>
+					<i class="iconfont">&#xe7a6;</i>
+					<ul>
+						<li><a href="">男装</a></li>
+						<li><a href="">五金工具</a></li>
+						<li><a href="">五金工具</a></li>
+						<li><a href="">五金工具</a></li>
+						<li><a href="">五金工具</a></li>
+					</ul>
+				</div>
+				<div class="tese-content">
+					<div class="tese-content-left">
+						<div class="tese-content-left-img">
+							<a href=""><img src="img/indexImg/11-19.webp" alt=""></a>
+							<span>
+								<i>热卖</i>
+								<b>TOP</b>
+								<b>01</b>
+							</span>
+							<div class="tese-content-left-text">
+								<p>【买一送一】南极人休闲裤男秋季加厚加绒男士时尚修身小脚弹力长裤男生运动裤子秋天直筒宽松冬季男裤男装 918黑色两条 28</p>
+							
+							</div>
+						</div>
+						<ul>
+							<li><a href="">好物榜</a><i class="iconfont">&#xe6ec;</i></li>
+							<li><a href="">折扣榜</a><i class="iconfont">&#xe6ec;</i></li>
+							<li><a href="">店铺榜</a><i class="iconfont">&#xe6ec;</i></li>
+							<li><a href="">热搜榜</a><i class="iconfont">&#xe6ec;</i></li>
+						</ul>
+					</div>
+					<div class="tese-content-right">
+						<dl>
+								<dd>
+									<a href="">
+										<span>
+											<i>TOP</i>
+											<strong>02</strong>
+										</span>
+										<img src="img/indexImg/11-20.jpg!q90.webp" alt="">
+										<b>孚日洁玉纯棉毛巾 经典素色柔软强吸水洗脸巾4条装 爱丁堡畅想毛巾 33x70cm</b>
+									</a>
+								</dd>
+								<dd>
+									<a href="">
+										<span>
+											<i>TOP</i>
+											<strong>02</strong>
+										</span>
+										<img src="img/indexImg/11-20.jpg!q90.webp" alt="">
+										<b>孚日洁玉纯棉毛巾 经典素色柔软强吸水洗脸巾4条装 爱丁堡畅想毛巾 33x70cm</b>
+									</a>
+								</dd>
+								<dd>
+									<a href="">
+										<span>
+											<i>TOP</i>
+											<strong>02</strong>
+										</span>
+										<img src="img/indexImg/11-20.jpg!q90.webp" alt="">
+										<b>孚日洁玉纯棉毛巾 经典素色柔软强吸水洗脸巾4条装 爱丁堡畅想毛巾 33x70cm</b>
+									</a>
+								</dd>
+								
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="tese-right">
+				<div class="tese-title-left">
+					<h3 class="">品牌闪烁</h3>
+					<i class="iconfont">&#xe7a6;</i>
+					<div class="pingpai">
+						<img src="https://img10.360buyimg.com/red/jfs/t1/85657/40/2567/5384/5dd24403E56c4545b/a1fac1c1ea7f80af.png" alt="">
+						<h6>华为荣耀专场</h6>
+						<span>全场最高直降500元</span>
+						<span>|</span>
+						<span>仅剩</span><span>24小时</span>
+						<img src="https://img12.360buyimg.com/n7/jfs/t1/51459/25/9083/211797/5d67a318E587e4a61/8a20bf8befaeed36.jpg" alt="">
+					</div>
+				</div>
+				<div class="tese-title-right">
+					<ul>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ><i></i></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+						<li><a href=""><img src="https://img14.360buyimg.com/red/jfs/t1/91510/20/1816/9879/5dc6306eE6a3742b3/23b5b370c56133aa.png" ></a>
+							<h6>骆驼闪购大牌日</h6>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="neirong">
+			<ul>
+				<!-- <li>
+					<a href="">
+					<img src="img/indexImg/neirong1.jpg.webp" alt="">
+					</a>
+					<p>
+						<span><a href="">自营</a></span>
+						<b><a href="">Redmi Note7Pro 索尼4800万超清双摄 骁龙675 18个月超长质保 4000mAh超长续航 6GB+128GB 梦幻蓝 游戏智能手机 小米 红米</a></b>
+					</p>
+					<mark>￥1190</mark>
+					<div class="xiangshi">
+						<i class="iconfont">&#xe705;</i>找相似
+					</div>
+				</li> -->
+			</ul>
+		</div>
+		</div>
+	</div>
+</body>
+
+	
+</html>
