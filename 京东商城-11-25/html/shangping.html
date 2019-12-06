@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- 样式重置 -->
+	<link rel="stylesheet" type="text/css" href="../css/rest.css"/>
+	<!-- 公共头部 -->
+    <link rel="stylesheet" type="text/css" href="../css/publicHeader.css"/>
+    <!-- 引入js数据 -->
+    <script src="../js/adressData.js" type="text/javascript" charset="utf-8"></script>
+    <!-- js效果 -->
+    <script src="../js/shangpingxinx.js" defer></script>
+    <!-- icon图标 -->
+    <link rel="stylesheet" type="text/css" href="../icon/font-icon/iconfont.css"/>
+    <!-- hover效果 -->
+    <link rel="stylesheet" href="../css/hover.c ss">
+    <!-- 购物车css，不能随意调换，免得css出错 -->
+    <link rel="stylesheet" href="../css/gouwuche.css">
+    <!-- 三级联动数据 -->
+    <!-- <script src="../js/city-picker.data.js"></script> -->
+    <!-- 底部 -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- 底部数据 -->
+    <script src="../js/footerData.js" defer></script>
+    <script src=""></script>
+    <link rel="stylesheet" href="../css/shangpingxinxi.css">
+    <script src="../js/shangpingxuanran.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="gouwuche_container">
+        <div class="gouwuche_cebianlan_top">
+            <ul>
+                <li>
+                    <b>我的关注</b>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe707;</i>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe706;</i>
+                </li>
+            </ul>
+        </div>
+        <div class="gouwuche_cebianlan_bottom">
+                <ul>
+                            <li>
+                                <i class="iconfont">&#xe6ee;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe78b;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe724;</i>
+                            </li>
+                </ul>
+        </div>
+        <div class="container">
+            <header class="header">
+                <div class="header-adress" style="width: 1190px;">
+                    <div class="index">
+                        <a href="../index.html"> <i class="iconfont">&#xe776;</i> 京东首页</a>
+                    </div>
+                    <adress class="iconfont">&#xe6fc;<span class="active-adress">四川</span>
+                        <div class="adress-container">
+                            <ul>
+                                <!-- <li><a href="">四川</a></li> -->
+                                <!-- 渲染地区部分 -->
+                            </ul>
+                            <!-- 其他地区 -->
+                            <div class="other-Areas">
+                                <span><!-- 地区专享版 --></span>
+                                <span><!-- <a href="">中國港澳</a> --></span>
+                            </div>
+                            <!-- Available Sites -->
+                            <div class="Available-Sites">
+                                <span>Available Sites</span>
+                                <ul>
+                                    <!-- <li><span class="iconfont">&#xe74e;</span><a href="">Global Site</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li> -->
+                                    <!-- 数据渲染部分 -->
+                                </ul>
+                            </div>
+                        </div>
+                    </adress>
+                    <ul class="header-right">
+                        <!-- 数据渲染部分 -->
+                    </ul>
+                </div> 
+            </header>
+        </div>
+        <!-- //购物车logo部分 -->
+        <div class="gouwuche_logo" style="width: 1190px;">
+                <h2><a href=""><img src="../img/login/login_logo.png" alt=""></a></h2>
+               
+                <div class="shangping_fenlei">
+                    <a href="">全部分类</a>
+                    <i class="iconfont">&#xe6eb;</i>
+                </div>
+                <div class="shangping_search">
+                    <input type="text" placeholder="鞋子">
+                    <button>搜全站</button>
+                    <button>搜本店</button>
+                    <dl class="dl">
+                        <dd><a href="">安踏</a></dd>
+                        <dd><a href="">理论</a></dd>
+                        <dd><a href="">理论</a></dd>
+                        <dd><a href="">理论</a></dd>
+                        <dd><a href="">理论</a></dd>
+                        <dd><a href="">理论</a></dd>
+                     </dl>
+                </div>
+                <div class="shangping_gouwuche">
+                    <a href="../html/gouwuche.html">
+                            <b class="iconfont">&#xe7d0;</b>
+                        我的购物车
+                        <i class="iconfont">&#xe6ec;</i>
+                    </a>
+                </div>
+              
+        </div>
+        <div class="shangping_logo">
+            <h1><img src="../img/indexImg/shangping.jpg" alt=""></h1>
+            <span>
+                <a href="">联富运动户外专营店</a>
+            </span>
+            <p>
+                    <i class="iconfont">&#xe746;</i>
+                    关注我
+            </p>
+        </div>
+        <!-- 购物车商品展示部分 -->
+        <div class="shangping_nav">
+            <ul>
+                <li>首页</li>
+                <li>全部分类</li>
+                <li>爆款专区</li>
+                <li>火爆专区</li>
+                <li>女性专区</li>
+            </ul>
+            <input type="text">
+            <button>
+                <i class="iconfont">
+                        &#xe7b1;
+                </i>
+            </button>
+        </div>
+        <div class="nav_min">
+            <ul>
+                <li><a href="">运动户外<i class="iconfont">&#xe6ec;</i></a></li>
+                <li><a href="">运动户外<i class="iconfont">&#xe6ec;</i></a></li>
+                <li><a href="">运动户外<i class="iconfont">&#xe6ec;</i></a></li>
+                <li><a href="">运动户外<i class="iconfont">&#xe6ec;</i></a></li>
+                <li><a href="">运动户外<i class="iconfont">&#xe6ec;</i></a></li>
+                <li><a href="">运动户外</a></li>
+            </ul>
+        </div>
+
+
+        <div class="shangping_neirong" id="shangping_neirong">
+            <div class="neirong-left">
+                <div class="shangping_img">
+                    <img src="../img/indexImg/fdj.jpg" alt="">
+                    <i class="iconfont">&#xe7b1;</i>
+                </div>
+                <div class="fangdajingImg">
+                    <img src="../img/indexImg/fdjD.png" alt="">
+                </div>
+                <div class="shangping_list">
+                    <i class="iconfont">&#xe6ed;</i>
+                    <ul id="fdj_img">
+                        <li><a href=""><img src="../img/indexImg/fdj.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../img/indexImg/fdj1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../img/indexImg/fdj1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../img/indexImg/fdj1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../img/indexImg/fdj1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="../img/indexImg/fdj1.jpg" alt=""></a></li>
+                    </ul>
+                    <i class="iconfont">&#xe6ec;</i>
+                </div>
+            </div>
+            <div class="neirong-right">
+                <h2>
+                       <b><img src="../img/indexImg/xp.png" alt=""></b> 华为 HUAWEI Mate20 X (5G) 7nm工艺5G旗舰芯片全面屏超大广角徕卡三摄8GB+256GB宝石蓝5G双模全网通手机
+                </h2>
+                <p>
+                    <a href="">【享白条12期免息！】麒麟990，双4000万徕卡电影四摄；爆品立省500》</a>
+                </p>
+                <div class="shangping_shuang"></div>
+                <div class="shangping_jiage"><b>京东价：</b>
+                    <i>￥6388.00</i>
+                    <a href="">降价通知</a>
+                    <span>累计评价12万+</span>
+                </div>
+                <div class="shangping_yewu">
+                    <i>增值业务：</i><a href="">高价回收极速到账</a>
+                    <a href="">3元1G</a>
+                </div>
+                <div class="shangping_peisong">
+                    <i>配送：</i>
+                    <a href="">由 京东 发货, 并提供售后服务. 23:00前下单，预计明天(12月03日)送达</a>
+                </div>
+                <p><i>重量：0.55kg</i></p>
+                <ul>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                    <li><a href=""><img src="../img/indexImg/xz.jpg" alt=""></a><b>亮黑色</b></li>
+                </ul>
+                <div class="shangping_pub">
+                    <i>选择版本</i>
+                    <span>8G+256G</span>
+                    <span>8G+256G</span>
+                </div>
+                <div class="shangping_pub">
+                    <i>选择版本</i>
+                    <span>5G SA/NSA 双模</span>
+                    <span>预售版</span>
+                </div>
+                <div class="shangping_pub">
+                    <i>套&nbsp;&nbsp;&nbsp;&nbsp;装</i>
+                    <span>优惠套装</span>
+                </div>
+                 <div class="shangping_pub">
+                    <i>增值保障</i>
+                    <span>全保修3年 ￥499 </span>
+                    <span>全保修3年 ￥499 </span>
+                    <span>全保修3年 ￥499 </span>
+                    <span>全保修3年 ￥499 </span>
+                </div>
+                <div class="shangping_pub">
+                    <i>白条分期</i>
+                    <span>不分期</span>
+                    <span>￥1666.34起×3期</span>
+                    <span>￥1666.34起×3期</span>
+                    <span>￥1666.34起×3期</span>
+                    <span>￥1666.34起×3期</span>
+                </div>
+                <div class="shangping_jiarugouwuche">
+                    <b>加入购物车</b>
+                </div>
+                <div class="shangping_jiarugouwucheT">
+                    <b>打白条</b>
+                </div>
+                <div class="shangping_tishi">
+                    <i>
+                        温馨提示·支持7天无理由退货·此商品不可使用京券东券
+                    </i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="footer-head">
+                <div class="footer-container">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <i>
+                                品类齐全，轻松购物
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                多仓直发，极速配送
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                正品行货，精致服务
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                天天低价，畅选无忧
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-body">
+                <div class="footer-center">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <!-- 数据渲染 -->
+                    <!-- <li><a href="">关于我们</a>
+                        <span>|</span>
+                    </li> -->
+                </ul>
+                        <p>
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000088" target="_blank">京公网安备 11000002000088号</a><span class="copyright_split">|</span><span>京ICP证070359号</span><span class="copyright_split">|</span>
+                            <a href="//img30.360buyimg.com/poprx/jfs/t1/45702/1/7206/3652062/5d4d3f4fE7ea82da4/207332da28ae8230.png" target="_blank">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a><span class="copyright_split">|</span><span>新出发京零 字第大120007号</span></p>
+                        <p><span>互联网出版许可证编号新出网证(京)字150号</span><span class="copyright_split">|</span>
+                            <a href="//pro.jd.com/mall/active/3bVDLXHdwVmdQksGF8TtS7ocq1NY/index.html" target="_blank">出版物经营许可证</a><span class="copyright_split">|</span>
+                            <a href="//misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a><span class="copyright_split">|</span><span>违法和不良信息举报电话：4006561155</span></p>
+                        <p><span class="copyright_text">Copyright © 2004 - <em id="copyright_year">2019</em>  京东JD.com 版权所有</span><span class="copyright_split">|</span><span>消费者维权热线：4006067733</span>
+                            <a href="//pro.jd.com/mall/active/38PitHBfR7ZopNHRSHnuuWR5AMDL/index.html" target="_blank" class="copyright_license">经营证照</a>
+                            <span class="copyright_split">|</span>
+                            <span>(京)网械平台备字(2018)第00003号</span>
+                            <span class="copyright_split">|</span>
+                            <a href="//storage.jd.com/imgtools/cbdaa22553-dccaf290-d1af-11e8-a840-89f99f5f0056.jpeg" target="_blank" class="mod_business_license">营业执照</a>
+                        </p>
+                        <p><span>京东旗下网站：</span>
+                            <a href="https://www.jdpay.com/" target="_blank">京东钱包</a><span class="copyright_split">|</span>
+                            <a href="https://www.jdcloud.com" target="_blank">京东云</a>
+                        </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

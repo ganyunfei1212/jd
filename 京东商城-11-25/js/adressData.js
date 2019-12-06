@@ -8,7 +8,7 @@ var adress = {
 }
 var nav = [{
 	title:"免费注册",
-	href: "#",
+	href: "html/zhuce.html",
 },{
 	title:"我的订单",
 	href: "#",

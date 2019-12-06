@@ -49,7 +49,13 @@ function adressFn() {
 navFn();
 function navFn(){
 		var headerRight = $('.header-right')[0];
-		var navS = '<li><a href="">你好，请登录</a></li>';
+		var user = window.localStorage.getItem("user");
+		var navS;
+		if(user){
+			 navS = '<li><a href="html/login.html">'+user+'</a></li>';
+		}else{
+			navS = '<li><a href="html/login.html">你好，请登录</a></li>';
+		}
 		forEach(nav,function(el,index){
 			if(el['content'] && el['href']){
 				navS += 	'<li><a href="'+el['href']+'">'+el['title']+'<i class="iconfont">&#xe6eb;</i></a><span></span><div class="item-box"></div></li>';
@@ -421,13 +427,12 @@ function gundong(){
 	cebianlan();
 }
 function gundongHeader(){
-	document.onscroll = function(ev){
-		ev = ev || window.event;
 		var xuanchuanContainer = document.querySelector('.xuanchuanContainer');
 		var vh = xuanchuanContainer.getBoundingClientRect().top;
-		var t = document.documentElement.scrollTop || document.body.scrollTop;
 		var twoNav = document.querySelector(".twoNav");
-		var header = 752;
+	document.onscroll = function(ev){
+		// console.log(1)
+		ev = ev || window.event;
 		if(vh <= 50 ){
 			twoNav.style.top = 0;
 			twoNav.style.opacity = 1;
@@ -438,39 +443,7 @@ function gundongHeader(){
 		cebianlan();
 	}	
 }
-//秒杀部分
-miaosha();
-function miaosha(){
-	var data = xuanchuanData["indexMiaoSha"];
-	var bannerFour = document.querySelector(".bannerFour");
-	var str = '';
-	data.forEach(function(el,index){
-		str += '<a href="">'+
-					'<div class="bannerFour-img">'+
-						'<img src="https://'+el["imageurl"]+'" >'+
-					'</div>'+
-					'<h6>'+el["wname"]+'</h6>'+
-					'<div class="price">'+
-						'<span>'+
-							'<i>¥</i>'+
-							'<b>'+el["miaoShaPrice"]+'</b>'+
-						'</span>'+
-						'<span>'+
-							'<i>¥</i>'+
-							'<b>'+el["jdPrice"]+'</b>'+
-						'</span>'+
-					'</div>'+
-				'</a><div class="xian"></div>'
-	})
-	bannerFour.innerHTML = str;
-	
-}
 
-//懒加载
-lanjiazhai();
-function lanjiazhai(){
-	
-}
 //侧边栏
 cebianlan();
 function cebianlan(){
@@ -491,10 +464,36 @@ function cebianlan(){
 			uls.lastElementChild.className = '';
 		}
 }
-//特色区域
-function tese(){
+//秒杀部分
+miaosha();
+function miaosha(){
+	var data = xuanchuanData["indexMiaoSha"];
+	var bannerFour = document.querySelector(".bannerFour");
+	var str = '';
+	data.forEach(function(el,index){
+		str += '<a href="html/shangping.html?'+ el["id"] +'">'+
+					'<div class="bannerFour-img">'+
+						'<img src="https://'+el["imageurl"]+'" >'+
+					'</div>'+
+					'<h6>'+el["wname"]+'</h6>'+
+					'<div class="price">'+
+						'<span>'+
+							'<i>¥</i>'+
+							'<b>'+el["miaoShaPrice"]+'</b>'+
+						'</span>'+
+						'<span>'+
+							'<i>¥</i>'+
+							'<b>'+el["jdPrice"]+'</b>'+
+						'</span>'+
+					'</div>'+
+				'</a><div class="xian"></div>'
+	})
+	bannerFour.innerHTML = str;
 	
 }
+
+
+
 
 // 相似部分数据循环
 xiangshiData();
@@ -558,16 +557,19 @@ function xiangshi(){
 function jdljz(el){
 	var max_h = window.innerHeight;//获取浏览器的高度;
 	var elH = el.getBoundingClientRect().top;//元素距离顶部的高度
+	var timer;
 	// 辅助函数用于判断距离
 	window.addEventListener('scroll',function(){
-		setTimeout(function() {
+		clearTimeout(timer);
+		timer = setTimeout(function() {
 			max_h = window.innerHeight;
 			elH = el.getBoundingClientRect().top;
 			pdjl();
 		}, 500);
 	})
 	window.onresize = function(){
-		setTimeout(function() {
+		clearTimeout(timer);
+		timer = setTimeout(function() {
 			max_h = window.innerHeight;
 			elH = el.getBoundingClientRect().top;
 			pdjl();
@@ -583,7 +585,33 @@ function jdljz(el){
 	}
 }
 
-
+gwcXx();
+function gwcXx(){
+	var shoppingCart = document.querySelector(".ShoppingCart");
+	var circular = shoppingCart.querySelector(".circular");
+	var a = shoppingCart.querySelector("a");
+	a.addEventListener('click',function(){
+		var user = window.localStorage.getItem("user");
+		if(!user){
+			alert("请登录后在查看");
+		}else{
+			window.open("html/gouwuche.html","_self")
+		}
+	})
+	if(window.localStorage.getItem("shuliang")){
+		circular.innerText = window.localStorage.getItem("shuliang");
+	}else{
+		circular.innerText = 0;
+	}
+	//注册
+	var header_right = document.querySelectorAll(".header-right>li");
+	if(window.localStorage.getItem("user")){
+		header_right[1].querySelector("a").innerText = "注销";
+		header_right[1].querySelector("a").href = "javascript:;";
+	}
+	// console.log(header_right);
+	
+}
 
 
 

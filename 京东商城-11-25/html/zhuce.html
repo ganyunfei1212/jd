@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- 登陆页样式 -->
+	<link rel="stylesheet" href="../css/login.css">
+	<!-- 阿里图标 -->
+	<link rel="stylesheet" type="text/css" href="../icon/font-icon/iconfont.css"/>
+	<!-- 样式重置 -->
+	<link rel="stylesheet" href="../css/rest.css">
+	<!-- login.js文件引入 -->
+	<script src="../js/zhuce.js" defer></script>
+	<title></title>
+	<style>
+		.zhuce_container{
+			box-shadow: 5px 2px 10px 2px #999999;
+		}
+		.zhuce_form{
+			margin: 50px auto 186px;
+  			width: 400px;
+		}
+		.zhuce_form p{
+			/* margin-bottom: 20px; */
+			position: relative;
+		}
+		.zhuce_form p i{
+			font-size: 12px;
+			line-height: 40px;
+			color: #999;
+			font-style: normal;
+			display: inline-block;
+		}
+		.zhuce_form p input{
+			width: 400px;
+			height: 54px;
+			border: 1px solid #999;
+			padding-left: 150px;
+			outline: none;
+			box-sizing: border-box;
+			
+		}
+		.zhuce_form p input::-webkit-input-placeholder {
+				color: #999;
+				letter-spacing: 2px;
+		}
+		.zhuce_form p label{
+			position: absolute;
+			top: 0;
+			left: 0;
+			line-height: 54px;
+			letter-spacing: 15px;
+			font-size: 16px;
+			color: #666666;
+			left: 20px;
+		}
+		.zhuce_form p b{
+			vertical-align: middle;
+			color: #999;
+		}
+		.zhuce_btn button{
+			background: red;
+			width: 400px;
+			height: 54px;
+			border: 0;
+			outline: none;
+			letter-spacing: 2px;
+			font-size: 18px;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-container">
+		<div class="zhuce_container">
+			<div class="login-header">
+				<h2><a href=""><img src="../img/login/login_logo.png" ></a></h2>
+				<b>欢迎注册</b>
+				<a href="login.html" style="color: red;">已有账号？ 请登录></a>
+			</div>
+		</div>
+		<div class="zhuce_form">
+			<p>
+				<label for="username">用户名</label>
+				<input type="text" id="username" placeholder="您的账户名和登陆名">
+				<b class="iconfont"></b><i></i>
+			</p>
+			<p>
+				<label for="pass">设置密码</label>
+				<input type="password" id="pass" placeholder="建议两种或者两种以上字符组合">
+				<b class="iconfont"></b><i></i>
+			</p>
+			<p>
+				<label for="qrpass">确认密码</label>
+				<input type="password" id="qrpass" placeholder="请再次输入密码">
+				<b class="iconfont"></b><i></i>
+			</p>	
+			<p class="zhuce_btn">
+				<button>立即注册</button>
+			</p>
+		</div>
+		<div class="login_bottom">
+			<ul>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">人才招聘</a></li>
+				<li><a href="">商家入驻</a></li>
+				<li><a href="">广告服务</a></li>
+				<li><a href="">手机京东</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">销售联盟</a></li>
+				<li><a href="">京东社区</a></li>
+				<li><a href="">京东公益</a></li>
+				<li><a href="">English Site</a></li>
+			</ul>
+			<p>Copyright © 2004-2019  京东JD.com 版权所有</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@charset "utf-8";
+footer {
+  margin-top: 40px;
+  width: 100%;
+  background: #eaeaea;
+  clear: both;
+}
+footer .footer-head {
+  border-bottom: 1px solid #999;
+}
+footer .footer-bottom {
+  width: 100%;
+}
+footer .footer-bottom p {
+  line-height: 22px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+footer .footer-bottom p span {
+  margin: 0 4px;
+}
+footer .footer-bottom p a {
+  font-size: 12px;
+  color: #999;
+}
+footer .footer-bottom ul {
+  width: 990px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 15px 0;
+}
+footer .footer-bottom ul li {
+  float: left;
+  margin-left: 8px;
+}
+footer .footer-bottom ul li a {
+  font-size: 12px;
+  color: #999;
+}
+footer .footer-bottom ul li span {
+  color: #999;
+  font-size: 12px;
+  margin-left: 5px;
+}
+footer .footer-body {
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+footer .footer-body .footer-center {
+  width: 1085px;
+  margin: 0 auto;
+  padding: 20px 0 20px 55px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+footer .footer-body .footer-center ul {
+  float: left;
+  width: 206px;
+}
+footer .footer-body .footer-center ul li:nth-of-type(1) {
+  line-height: 28px;
+  height: 28px;
+}
+footer .footer-body .footer-center ul li:nth-of-type(1) a {
+  font-weight: 700;
+  color: #777;
+  font-size: 14px;
+}
+footer .footer-body .footer-center ul li {
+  height: 22px;
+  line-height: 22px;
+}
+footer .footer-body .footer-center ul li a {
+  font-size: 12px;
+  color: #999;
+}
+footer .footer-container {
+  height: 102px;
+  overflow: hidden;
+  width: 990px;
+  box-sizing: border-box;
+  padding: 30px 0 30px 55px;
+  margin: 0 auto;
+}
+footer .footer-container ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+footer .footer-container ul li {
+  float: left;
+  width: 224px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer .footer-container ul li span {
+  float: left;
+  width: 36px;
+  height: 42px;
+  display: inline-block;
+  margin-right: 10px;
+  background: url(../img/xbt/ico_service\ \(1\).png);
+}
+footer .footer-container ul li i {
+  float: left;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  font-style: normal;
+}

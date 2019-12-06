@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- 样式重置 -->
+	<link rel="stylesheet" type="text/css" href="../css/rest.css"/>
+	<!-- 公共头部 -->
+    <link rel="stylesheet" type="text/css" href="../css/publicHeader.css"/>
+    <!-- 引入js数据 -->
+    <script src="../js/adressData.js" type="text/javascript" charset="utf-8"></script>
+    <!-- js效果 -->
+    <script src="../js/gouwuceHeader.js" defer></script>
+    <!-- icon图标 -->
+    <link rel="stylesheet" type="text/css" href="../icon/font-icon/iconfont.css"/>
+    <!-- hover效果 -->
+    <link rel="stylesheet" href="../css/hover.css">
+    <!-- 购物车css，不能随意调换，免得css出错 -->
+    <link rel="stylesheet" href="../css/gouwuche.css">
+    <!-- 三级联动数据 -->
+    <script src="../js/city-picker.data.js"></script>
+    <!-- 底部 -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- 底部数据 -->
+    <script src="../js/footerData.js" defer></script>
+    <script src="../js/shangpingxuanran.js"></script>
+</head>
+<body>
+    <div class="gouwuche_container">
+        <div class="gouwuche_cebianlan_top">
+            <ul>
+                <li>
+                    <b>我的关注</b>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe707;</i>
+                </li>
+                <li>
+                    <i class="iconfont">&#xe706;</i>
+                </li>
+            </ul>
+        </div>
+        <div class="gouwuche_cebianlan_bottom">
+                <ul>
+                            <li>
+                                <i class="iconfont">&#xe6ee;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe78b;</i>
+                            </li>
+                            <li>
+                                <i class="iconfont">&#xe724;</i>
+                            </li>
+                </ul>
+        </div>
+        <div class="container">
+            <header class="header">
+                <div class="header-adress">
+                    <div class="index">
+                        <a href="../index.html"> <i class="iconfont">&#xe776;</i> 京东首页</a>
+                    </div>
+                    <adress class="iconfont">&#xe6fc;<span class="active-adress">四川</span>
+                        <div class="adress-container">
+                            <ul>
+                                <!-- <li><a href="">四川</a></li> -->
+                                <!-- 渲染地区部分 -->
+                            </ul>
+                            <!-- 其他地区 -->
+                            <div class="other-Areas">
+                                <span><!-- 地区专享版 --></span>
+                                <span><!-- <a href="">中國港澳</a> --></span>
+                            </div>
+                            <!-- Available Sites -->
+                            <div class="Available-Sites">
+                                <span>Available Sites</span>
+                                <ul>
+                                    <!-- <li><span class="iconfont">&#xe74e;</span><a href="">Global Site</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li>
+                                    <li><span class="iconfont">&#xe6f8;</span><a href="">Situs Indonesia</a></li> -->
+                                    <!-- 数据渲染部分 -->
+                                </ul>
+                            </div>
+                        </div>
+                    </adress>
+                    <ul class="header-right">
+                        <!-- 数据渲染部分 -->
+                    </ul>
+                </div> 
+            </header>
+        </div>
+        <!-- //购物车logo部分 -->
+        <div class="gouwuche_logo">
+                <h2><a href=""><img src="../img/login/login_logo.png" alt=""></a></h2>
+                <b><a href="">购物车</a></b>
+                <div class="search">
+                    <input type="text" placeholder="自营">
+                    <button>搜索</button>
+                </div>
+        </div>
+        <!-- 购物车商品展示部分 -->
+        <div class="gouwuche_shangping">
+            <div class="shangping_bg">
+                <i class="iconfont">&#xe77e;</i>
+                <div class="gouwuche_text">
+                        <p>购物车空空的哦~，去看看心仪的商品吧~</p>
+                        <a href="../index.html">去购物></a>
+                </div>
+            </div>
+            <div class="shangping_head">
+                <div class="shangping_head_left"><span>全部商品</span><i>数量</i></div>
+                <div class="shangping_head_right"><span>配送至：</span>
+                    <div class="shangping_address">请选择
+                        <i class="iconfont">&#xe6eb;</i>
+                    </div>
+                    <div class="shangping_sanjiliandong">
+                        <div class="shangping_xuanzhe">
+                                <span class="sheng">请选择
+                                        <i class="iconfont">&#xe6eb;</i>
+                                </span>
+                                <span class="shi">请选择
+                                        <i class="iconfont">&#xe6eb;</i>
+                                </span>
+                                <span class="qu">请选择
+                                        <i class="iconfont">&#xe6eb;</i>
+                                </span>                       
+                        </div>
+                        <ul>
+                            <!-- <li><a href="">上海</a></li> -->
+                        </ul>
+                        <ul>
+                            <!-- <li><a href="">上海</a></li> -->
+                        </ul>
+                        <ul>
+                                <!-- <li><a href="">上海</a></li> -->
+                        </ul>
+                        <ul>
+                                <!-- <li><a href="">上海</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="gouwuche_content_text_head">
+                    <span> 
+                        <input type="checkbox" id = "quanxuan"> <i>全选</i>      
+                    </span>
+                    <div class="shangping_name">
+                        商品
+                    </div>
+                    <div class="kong"></div>
+                    <div class="gouwuche_price">
+                        单价
+                    </div>
+                    <div class="gouwuche_shuliang">
+                            数量
+                    </div>
+                    <div class="gouwuche_xiaoji">
+                            小计
+                    </div>
+                    <div class="gouwuche_caozuo">
+                            操作
+                    </div>
+                </div>
+
+
+
+                <!-- 商品信息 -->
+                <div class="shangping_quyu">
+                    <div class="shangping_quyu_head">
+                        <input type="checkbox"> <i>京东自营</i>      
+                    </div>
+                    <!-- //商品信息 -->
+                    <ul id="shopxx">
+                        
+                        <!-- <li> -->
+                            <!-- <input type="checkbox"> -->
+                            <!-- //具体商品 -->
+                            <!-- <div class="juti_content">
+                               <img src="../img/login/img1.png" alt=""> 
+                                <span>
+                                    <a href="">
+                                            小米 红米6 全网通版 3GB内存 流沙金 32GB 移动联通电信4G手机 双卡双待
+                                    </a>
+                                    <b class="iconfont">&#xe7a5;</b><i>选服务</i>
+                                    <b class="iconfont">&#xe744;</b><i>礼品包装</i>
+                                </span>
+                                <div class="shangping_jianjie">
+                                    <p>流沙金</p>
+                                    <p>3GB + 32GB</p>
+                                </div>
+                                <div class="juti_jiage">
+                                    <p class="danjia">￥633.00</p>
+                                </div>
+                                <div class="juti_shuliang">
+                                    <a href="javascript:;">-</a>
+                                        <input type="text" class="shuliang" value="1">
+                                    <a href="javascript:;">+</a>
+                                    <p>有货</p>
+                                </div>
+                                <div class="juti_xiaoji">
+                                    <b class="xiaoji">￥633.00</b>
+                                </div>
+                                <div class="juti_caozuo">
+                                    <p><a href="javascript:;" class="delete" >删除</a></p>
+                                    <p><a href="">移到我的关注</a></p>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    <div class="jiesuan">
+                        <input type="checkbox" id="quanxuanT"> <b>全选</b>
+                        <p><a href="">删除选中商品</a>
+                            <a href="">移动关注</a>
+                            <a href="">清理购物车</a>
+                        </p>
+                        <div class="jiesuan_right">
+                            <button>去结算</button>
+                            <div class="jiesuan_chuxiao">
+                                <p><b>总价：</b><i id="zongjia">￥0.00</i><b class="iconfont">&#xe740;</b></p>
+                                <p><b>促销：</b><em>-¥0.00</em></p>
+                            </div>
+                            <div class="jiesuan_xuanze">
+                                <p>
+                                    已有 <i id="shuliang">0</i> 件商品<i class="iconfont">&#xe6ee;</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer-head">
+                <div class="footer-container">
+                    <ul>
+                        <li>
+                            <span></span>
+                            <i>
+                                品类齐全，轻松购物
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                多仓直发，极速配送
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                正品行货，精致服务
+                            </i>
+                        </li>
+                        <li>
+                            <span></span>
+                            <i>
+                                天天低价，畅选无忧
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-body">
+                <div class="footer-center">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <!-- 数据渲染 -->
+                    <!-- <li><a href="">关于我们</a>
+                        <span>|</span>
+                    </li> -->
+                </ul>
+                        <p>
+                            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000088" target="_blank">京公网安备 11000002000088号</a><span class="copyright_split">|</span><span>京ICP证070359号</span><span class="copyright_split">|</span>
+                            <a href="//img30.360buyimg.com/poprx/jfs/t1/45702/1/7206/3652062/5d4d3f4fE7ea82da4/207332da28ae8230.png" target="_blank">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a><span class="copyright_split">|</span><span>新出发京零 字第大120007号</span></p>
+                        <p><span>互联网出版许可证编号新出网证(京)字150号</span><span class="copyright_split">|</span>
+                            <a href="//pro.jd.com/mall/active/3bVDLXHdwVmdQksGF8TtS7ocq1NY/index.html" target="_blank">出版物经营许可证</a><span class="copyright_split">|</span>
+                            <a href="//misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a><span class="copyright_split">|</span><span>违法和不良信息举报电话：4006561155</span></p>
+                        <p><span class="copyright_text">Copyright © 2004 - <em id="copyright_year">2019</em>  京东JD.com 版权所有</span><span class="copyright_split">|</span><span>消费者维权热线：4006067733</span>
+                            <a href="//pro.jd.com/mall/active/38PitHBfR7ZopNHRSHnuuWR5AMDL/index.html" target="_blank" class="copyright_license">经营证照</a>
+                            <span class="copyright_split">|</span>
+                            <span>(京)网械平台备字(2018)第00003号</span>
+                            <span class="copyright_split">|</span>
+                            <a href="//storage.jd.com/imgtools/cbdaa22553-dccaf290-d1af-11e8-a840-89f99f5f0056.jpeg" target="_blank" class="mod_business_license">营业执照</a>
+                        </p>
+                        <p><span>京东旗下网站：</span>
+                            <a href="https://www.jdpay.com/" target="_blank">京东钱包</a><span class="copyright_split">|</span>
+                            <a href="https://www.jdcloud.com" target="_blank">京东云</a>
+                        </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

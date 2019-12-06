@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="../icon/font-icon/iconfont.css"/>
 	<!-- 样式重置 -->
 	<link rel="stylesheet" href="../css/rest.css">
+	<!-- login.js文件引入 -->
+	<script src="../js/login.js" defer></script>
 	<title></title>
 </head>
 <body>
@@ -26,35 +28,77 @@
 			<div class="login_bg">
 				<img src="../img/login/img1.png" >
 				<div class="login_form">
-					<p><i class="iconfont">&#xe76c;</i>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+					<p id="tishiS"><i class="iconfont">&#xe76c;</i>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
 					<div class="login_btn">
-						<button type="button"><a href="">扫码登陆</a></button>
-						<button type="button"><a href="">账户登陆</a></button>
+						<button type="button"><a href="javascript:;">扫码登陆</a></button>
+						<button type="button"><a href="javascript:;">账户登陆</a></button>
 					</div>
-					<div class="login_show">
-						<img src="../img/login/show.png" alt="">
-					</div>
-					<p>
-						<span>打开</span>
-						<a href="">手机京东</a>
-						<span>扫描二维码</span>
-					</p>
-					<ul>
-						<li><a href=""> <i class="iconfont">&#xe73e;</i> 免输入</a></li>
-						<li><a href=""> <i class="iconfont">&#xe77d;</i> 更快</a></li>
-						<li><a href=""> <i class="iconfont">&#xe77a;</i> 更安全</a></li>
-					</ul>
-					<div class="login_input_bottom">
-						<div class="login_input_left">
-							<span><a href="">QQ</a></span>
-							<span><a href=""></a></span>
+					<div class="login_container_one">
+						<div class="login_show">
+							<img src="../img/login/show.png" alt="">
 						</div>
-						<div class="login_input_right"></div>
+						<p>
+							<span>打开</span>
+							<a href="">手机京东</a>
+							<span>扫描二维码</span>
+						</p>
+						<ul>
+							<li><a href=""> <i class="iconfont">&#xe73e;</i> 免输入</a></li>
+							<li><a href=""> <i class="iconfont">&#xe77d;</i> 更快</a></li>
+							<li><a href=""> <i class="iconfont">&#xe77a;</i> 更安全</a></li>
+						</ul>
+						<div class="login_input_bottom">
+							<div class="login_input_left">
+								<span><a href=""> <i class="iconfont">&#xe715;</i> QQ </a></span>
+								<span><a href=""> <i class="iconfont">&#xe7bd;</i> 微信 </a></span>
+							</div>
+							<div class="login_input_right">
+								<span><a href="zhuce.html"><i class="iconfont">&#xe6ec;</i>立即注册</a></span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="login_container_two">
+						<!-- 后面 -->
+						<label class="login_from_child" for="userName">
+							<span class=""><i class="iconfont">&#xe7cb;</i></span>
+							<p><input type="text" id="userName" placeholder="邮箱/用户名/登录手机"></p>
+						</label>
+						<label class="" for="pass">
+							<span class=""><i class="iconfont">&#xe7cb;</i></span>
+							<p><input type="password" id="pass" placeholder="密码"></p>
+						</label>
+						<p class="wangjimima"><a href="">忘记密码</a></p>
+						<button id="denglu"><a href="JavaScript:;">登陆</a></button>
+						<div class="login_input_bottom">
+								<div class="login_input_left">
+									<span><a href=""> <i class="iconfont">&#xe715;</i> QQ </a></span>
+									<span><a href=""> <i class="iconfont">&#xe7bd;</i> 微信 </a></span>
+								</div>
+								<div class="login_input_right">
+									<span><a href="zhuce.html"><i class="iconfont">&#xe6ec;</i>立即注册</a></span>
+								</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+		<div class="login_bottom">
+			<ul>
+				<li><a href="">关于我们</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">人才招聘</a></li>
+				<li><a href="">商家入驻</a></li>
+				<li><a href="">广告服务</a></li>
+				<li><a href="">手机京东</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">销售联盟</a></li>
+				<li><a href="">京东社区</a></li>
+				<li><a href="">京东公益</a></li>
+				<li><a href="">English Site</a></li>
+			</ul>
+			<p>Copyright © 2004-2019  京东JD.com 版权所有</p>
+		</div>
 	</div>
 </body>
 </html>

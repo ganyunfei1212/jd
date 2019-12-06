@@ -34,7 +34,9 @@
 		"cName": "",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "40000"
+		"seckillNum": "40000",
+		"href":"https://www.baidu.com",
+		"id":'1',
 	}, {
 		"canFreeRead": "false",
 		"discount": "100.00",
@@ -70,7 +72,8 @@
 		"operateWord": "8GB大运存",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "3000"
+		"seckillNum": "3000",
+		"id": '2',
 	}, {
 		"canFreeRead": "false",
 		"soldRate": 50,
@@ -107,7 +110,8 @@
 		"operateWord": "6000mAh 6+128GB",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "20"
+		"seckillNum": "20",
+		"id":3,
 	}, {
 		"canFreeRead": "false",
 		"soldRate": 95,
@@ -144,7 +148,9 @@
 		"operateWord": "买3送2 5瓶不复发",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "10000"
+		"seckillNum": "10000",
+		"id":4,
+
 	}, {
 		"canFreeRead": "false",
 		"discount": "12.30",
@@ -179,7 +185,8 @@
 		"cName": "",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "6000"
+		"seckillNum": "6000",
+		"id":5,
 	}, {
 		"canFreeRead": "false",
 		"soldRate": 28,
@@ -216,6 +223,7 @@
 		"operateWord": "送毛球\/送运费险",
 		"discountNew": "",
 		"promoType": 1,
+		"id":6,
 		"seckillNum": "1000"
 	}, {
 		"canFreeRead": "false",
@@ -253,7 +261,8 @@
 		"operateWord": "i5\/8\/512\/MX250",
 		"discountNew": "",
 		"promoType": 1,
-		"seckillNum": "300"
+		"seckillNum": "300",
+		"id":7,
 	}, {
 		"canFreeRead": "false",
 		"soldRate": 14,

@@ -1,0 +1,566 @@
+@charset "utf-8";
+.fangdajing{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c9b0b0;
+    opacity: .4;
+    cursor: move;
+}
+.fangdajingImg{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 452px;
+    top: 0px;
+    overflow: hidden;
+    display: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 5px 5px #ccc;
+    img{
+        width: 900px;
+        height: 900px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.gouwuche_cebianlan_top{
+    z-index: 10;
+
+}
+.gouwuche_cebianlan_bottom{
+    z-index: 10;
+}
+.shangping_neirong{
+    width: 1200px;
+    overflow: hidden;
+    // background: blanchedalmond;
+    margin: 10px auto 0px auto;
+    .neirong-left{
+        width: 450px;
+        height: 568px;
+        // background: red;
+        position: relative;
+        float: left;
+        .shangping_list{
+            width: 100%;
+            height: 58px;
+            // background: aqua;
+            margin: 20px auto;
+            i:nth-of-type(1){
+                float: left;
+                line-height: 58px;
+                font-size: 35px;
+                font-weight: 700;
+            }
+            i:nth-of-type(2){
+                float: left;
+                line-height: 58px;
+                font-size: 35px;
+                font-weight: 700;
+            }
+            ul{
+                float: left;
+                width: 380px;
+                height: 58px;
+                overflow: hidden;
+                display: inline-block;
+                // background: darkblue;
+                margin: 0;
+                li{
+                    width: 58px;
+                    height: 58px;
+                    float: left;
+                    margin-left: 15px;
+                    a{
+                        display: inline-block;
+                        width: 58px;
+                        height: 58px;
+                        img{
+                            width: 58px;
+                            height: 58px;
+                            border: 1px solid white;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+            }
+        }
+        .shangping_img{
+            width: 450px;
+            height: 450px;
+            box-sizing: border-box;
+            position: relative;
+            // padding-top: 10px;
+            img{
+                width: 450px;
+                height: 450px;
+                border: 1px solid #999;
+            }
+            i{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background: #999;
+                bottom: 0;
+                right: 0;
+                text-align: center;
+                line-height: 30px;
+                font-size: 25px;
+                color: white;
+            }
+        }
+    }
+    .neirong-right{
+        padding-left: 30px;
+        width: 736px;
+        height: 650px;
+        // background: blue;
+        float: left;
+        box-sizing: border-box;
+        .shangping_peisong{
+            width: 100%;
+            height: 32px;
+            line-height: 32px;
+            i{
+                font-size: 12px;
+                color: #999;
+                font-style: normal;
+            }
+            a{
+                font-size: 12px;
+                color: black;
+            }
+        }
+        .shangping_tishi{
+            padding-top: 10px;
+            clear: both;
+            i{
+                font-size: 12px;
+                color: black;
+                font-style: normal;
+            }
+        }
+        .shangping_jiarugouwuche{
+            margin-top: 10px;
+            width: 142px;
+            height: 46px;
+            background: #df3033;
+            text-align: center;
+            line-height: 46px;
+            float: left;
+            margin-right: 5px;
+            b{
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .shangping_jiarugouwucheT{
+                background: chartreuse;
+                margin-top: 10px;
+                width: 142px;
+                height: 46px;
+                text-align: center;
+                line-height: 46px;
+                float: left;
+                margin-right: 5px;
+                b{
+                    color: white;
+                    font-size: 20px;
+                }
+           }
+        .shangping_pub:last-of-type{
+            border-bottom: black double 1px;
+            height: 40px;
+        }
+        .shangping_pub{
+            height: 32px;
+            line-height: 32px;
+            i{
+                font-style: normal;
+                font-size: 12px;
+                width: 50px;
+                display: inline-block;
+                text-align: center;
+            }
+            span{
+                border: 1px solid #999;
+                color: #666;
+                font-weight: normal;
+                font-size: 12px;
+                padding: 5px 5px;
+                text-align: center;
+                margin-left: 5px;
+            }
+        }
+        ul{
+            overflow: hidden;
+            li{
+                width: 94px;
+                height: 44px;
+                background:#ccc;
+                float: left;
+                line-height: 44px;
+                margin: 5px;
+                border: 1px solid #666;
+                a{
+                    img{
+                        vertical-align: middle;
+                    }
+                }
+                b{
+                    display: inline-block;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #666;
+                    margin-left: 8px;
+                }
+            }
+        }
+        p:nth-of-type(2){
+            width: 100%;
+            border-bottom: 1px solid whitesmoke;
+            padding-bottom: 10px;
+            i{
+                font-size: 12px;
+                font-style: normal;
+            }            
+        }
+        .shangping_yewu{
+            width: 100%;
+            height: 32px;
+            // background: aqua;
+            line-height: 32px;
+            i{
+                font-size: 12px;
+                font-style: normal;
+            }
+            a{
+                display: inline-block;
+                height: 18px;
+                border-radius: 15px;
+                border: 1px solid blue;
+                vertical-align: middle;
+                font-size: 12px;
+                line-height: 18px;
+                color: blue;
+            }
+        }
+        .shangping_jiage{
+            width: 100%;
+            height: 46px;
+            margin-bottom: 5px;
+            background: #f3f3f3;
+            line-height: 46px;
+            a{
+                font-size: 12px;
+                color: red;
+                margin-left: 10px;
+            }
+            b{
+                font-size: 12px;
+                color: #666;
+                font-weight: normal;
+            }
+            span{
+                margin-top: 7px;
+                margin-right: 20px;
+                padding-left: 20px;
+                border-left: 1px solid black;
+                float: right;
+                width: 50px;
+                text-align: center;   
+                height: 33px;
+                font-size: 12px;
+                line-height: normal;
+               cursor: pointer;
+            }
+            i{
+                font-weight: 700px;
+                color: #B61D1D;
+                font-style: normal;
+                font-size: 18px;
+            }
+        }
+        .shangping_shuang{
+            width: 100%;
+            height: 32px;
+            background: url(../img/indexImg/1212.png);
+        }
+        h2{
+            font: 700 16px Arial,"microsoft yahei";
+            color: black;
+            padding-top: 10px;
+            line-height: 28px;
+            margin-bottom: 5px;
+            b{
+                img{
+                    vertical-align: middle;
+                }
+            }
+        }
+        p{
+            margin-bottom: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 618px;
+            max-height: 1.5em;
+            line-height: 1.5em;;
+            a{
+                font-size: 12px;
+                color: red;
+            }
+        }
+    }
+}
+.nav_min{
+    width: 100%;
+    height: 40px;
+    background: #e1e1e1;
+    margin: 0 auto;
+    position: relative;
+    ul{
+        width: 1210px;
+        margin: 0 auto;
+        overflow: hidden;
+        li{
+            float: left;
+            line-height: 40px;
+            margin-left: 10px;
+            a{
+                font-size: 12px;
+                color: black;
+                i{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+.shangping_nav{
+    width: 1210px;
+    height: 40px;
+    // background: #B61D1D;
+    margin: 0 auto;
+    position: relative;
+    ul{
+        overflow: hidden;
+        padding-top: 7px;
+        float: left;
+        li:nth-of-type(1){
+            font-weight: 700;
+        }
+        li{
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 0 15px;
+            // background: #ccc;
+        }
+    }
+    input{
+        position: absolute;
+        right: 45px;
+        padding: 0 0 0 10px;
+        width: 130px;
+        line-height: 22px;
+        height: 22px;
+        background-color: #ffffff;
+        color: #c9c9c9;
+        vertical-align: top;
+        outline: none;
+        border: solid 1px #e1e1e1;
+        border-top-left-radius: 11px;
+        border-bottom-left-radius: 11px;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        width: 46px;
+        height: 24px;
+        border-bottom-right-radius: 11px;
+        border-top-right-radius: 11px;
+        background: white;
+        outline: none;
+        border: 1px solid black;
+        background: #333333;
+        text-align: center;
+        color: white;
+        i{
+            font-size: 20px;
+        }
+    }
+}
+.shangping_logo{
+    width: 990px;
+    height: 110px;
+    margin: 0 auto;
+    // background: red;
+    h1{
+        line-height: 110px;
+        float: left;
+        img{
+            vertical-align: middle;
+        }
+    }
+    span{
+        display: inline-block;
+        float: left;
+        position: relative;
+        top: 25px;
+        left: 10px;
+        // background: #ccc;
+        a{
+            color: #333;
+            font-size: 18px;
+        }
+    }
+    p{
+        display: inline-block;
+        width: 71px;
+        height: 23px;
+        background: #B61D1D;
+        position: relative;
+        top: 60px;
+        right: 150px;
+        border-radius: 13px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        line-height: 23px;
+        i{
+            color: #fff;
+
+        }
+    }
+}
+.shangping_gouwuche{
+    width: 140px;
+    height: 36px;
+    float: left;
+    position: relative;
+    left: 280px;
+    background: #F9F9F9;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    top: 15px;
+    a{
+        color: black;
+        i{
+            position: absolute;
+        }
+        b{
+            position: absolute;
+            left: 2px;
+            font-size: 20px;
+            color: brown;
+        }
+    }
+}
+.shangping_fenlei{
+    color: #ccc;
+    width: 75px;
+    height: 27px;
+    border: 1px solid #ccc;
+    line-height: 25px;
+    background: #fff;
+    position: relative;
+    left: 45px;
+    top: 22px;
+    float: left;
+    box-sizing: border-box;
+    i{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        color: #666;
+        left: 56px;
+    }
+    a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        color: #666;
+        left: 7px;
+    }
+}
+.dl{
+    clear: both;
+    overflow: hidden;
+   dd{
+       margin-right: 10px;
+        float: left;
+        a{
+            font-size: 12px;
+            color: #666666;
+        }
+    }
+}
+.shangping_search{
+    float: left;
+    width: 560px;
+    height: 40px;
+    position: relative;
+    left: 150px;
+    top: 10px;
+    input{
+    color: #666;
+    width: 560px;
+    height: 40px;
+    margin-bottom: 4px;
+    border-width: 2px 0 2px 2px;
+    border-color: #B61D1D;
+    border-style: solid;
+    outline: 0;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    padding: 5px;
+    box-sizing: border-box;
+   
+    }
+    button:nth-of-type(1){
+        position: absolute;
+        right: 52px;
+        top: 2px;
+        width: 52px;
+        height: 36px;
+        background: #B61D1D;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    button:nth-of-type(2){
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 52px;
+        height: 40px;
+        background: #474e5c;;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+}
